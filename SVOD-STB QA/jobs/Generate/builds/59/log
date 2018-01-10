@@ -1,0 +1,9 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson822732256441824574.groovy"
+Done updating xml: genref:1678227 udi:878SVOD80 seriesid:4417
+Caught: groovy.lang.MissingPropertyException: No such property: srcStream for class: hudson822732256441824574
+groovy.lang.MissingPropertyException: No such property: srcStream for class: hudson822732256441824574
+	at hudson822732256441824574.run(hudson822732256441824574.groovy:59)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

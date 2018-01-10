@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H/15 * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
+      <scriptSource class="hudson.plugins.groovy.StringScriptSource">
+        <command>/*GENERATE FIRST*/
+
+//generate and convert value to string
+def genref =  String.valueOf(((int)((Math.random()*919359467)+1))).substring(0, 7)
+
+//uiD setup
+//uiD setup
+def svoduid_full = String.valueOf(((int)((Math.random()*999999)+1)))
+def svoduid_4digits = svoduid_full.substring(0, 3)
+def svoduid_2digits = svoduid_full.substring(2, 4)
+def uid = svoduid_4digits + &quot;SVOD&quot; + svoduid_2digits
+//uiD setup
+
+def seriesId = String.valueOf(((int)((Math.random()*999999)+1))).substring(0, 4)
+def seasonId = String.valueOf(((int)((Math.random()*999999)+1))).substring(0, 4)
+
+/*GENERATE FIRST*/
+
+//read file:
+def xmlContents = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-OTT QA/collection.json&quot;).getText()
+
+//where to put new file
+def networkPath = &quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-OTT QA/collection1.json&quot;
+
+//put values in array
+def vals = [genref,uid,seriesId, seasonId]
+
+def keys = [&quot;{#Project#SSgenRef}&quot;,&quot;{#Project#SSuid}&quot;, &quot;{#Project#SSseriesId}&quot;, &quot;{#Project#SSseasonID}&quot;]
+
+def key = keys[0]
+
+for(def i = 0; i &lt; 4; ++i){
+		
+	xmlContents = xmlContents.replace(keys[i],vals[i]);	
+	
+}
+
+File file = new File(networkPath)
+
+file.text = xmlContents
+
+println &quot;&quot;
+println &quot;Done updating xml: genref:&quot; + genref + &quot; udi:&quot; + uid + &quot; seriesid:&quot; + seriesId + &quot; seasonid:&quot; + seasonId
+println &quot;&quot;
+
+println &quot;==================================================================&quot;
+println &quot;&quot;
+/*DROP IMAGE==============================================================*/
+def soureFileImg = &quot;//172.16.103.220/MediaManager/Automation image ingest/automation.png&quot;
+def destFileImg = &quot;//172.16.103.220/MediaManager/Images/&quot;
+def extImg =  soureFileImg.substring(soureFileImg.length() - 4)
+
+def srcStreamImg = new File(soureFileImg).newDataInputStream()
+def dstStreamImg = new File(destFileImg + seriesId +&quot;_PP&quot;+ extImg).newDataOutputStream()
+dstStreamImg &lt;&lt; srcStreamImg
+srcStreamImg.close()
+dstStreamImg.close()
+
+println &quot;Done dropping image: &quot; + destFileImg + seriesId +&quot;_PP&quot; + extImg
+
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+
+/*DROP ASSET==============================================================*/
+//specify source &amp; dest
+def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_sm.mxf&quot;
+
+def destFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&quot;
+
+//get the file extension
+def extAss =  soureFileAss.substring(soureFileAss.length() - 4)
+
+//get new file name values
+def newfilenameAss = genref + &quot;_&quot; + uid + extAss
+
+def srcStreamAss = new File(soureFileAss).newDataInputStream()
+def dstStreamAss = new File(destFileAss + newfilenameAss).newDataOutputStream()
+
+dstStreamAss &lt;&lt; srcStreamAss
+srcStreamAss.close()
+dstStreamAss.close()
+
+println &quot;&quot;
+println &quot;Done dropping asset: &quot; + newfilenameAss
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+
+</command>
+      </scriptSource>
+      <groovyName>Groovy1.5.4</groovyName>
+      <parameters></parameters>
+      <scriptParameters></scriptParameters>
+      <properties></properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

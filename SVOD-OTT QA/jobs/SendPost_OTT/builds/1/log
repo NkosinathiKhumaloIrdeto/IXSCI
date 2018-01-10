@@ -1,0 +1,34 @@
+Started by upstream project "[8mha:////4LJ+Jz0XMWTD/G4P9Sh6tJzQjG1W1MPLFRtIiG2Sdkz2AAAAvR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy1EgYL/az8JP3gMH8XXf+QEFUjg0BHsIh7al5qUWJJKlBEI8jVDUgl5qUAyeD80qLk1GJNfQBVkqQ07QAAAA==[0mSVOD-OTT QA/Generate (REF and Sources)" build number [8mha:////4MM4WNcNsADfD8CNVdihegZtz85zG8T3/nVIFrVnZXu0AAAAvR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkv9rPwk/eAwfxdd/5AQVSODQEewiHtqXmpRYkkqUEQjyNUNSCXmpQDJ4PzSouTUYk19YwC09mMv7gAAAA==[0m3
+originally caused by:
+ Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\SendPost_OTT
+[SendPost_OTT] $ cmd /c call C:\Windows\TEMP\jenkins844022875460835537.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\SendPost_OTT>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-OTT QA\collection1.json" 
+newman
+
+QA-SVOD-OTT
+
+→ SVOD-OTT
+  POST http://172.16.103.244:8652/Metadata [200 OK, 250B, 21.8s]
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        0 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 21.9s                     │
+├───────────────────────────────────────────────┤
+│ total data received: 117B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 21.8s                  │
+└───────────────────────────────────────────────┘
+Finished: SUCCESS

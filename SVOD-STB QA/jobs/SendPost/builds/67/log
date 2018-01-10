@@ -1,0 +1,36 @@
+Started by upstream project "[8mha:////4DbscZDOjf81QRsI4LpWfYUH5SXDeVw0NeIUN6mRyGs0AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4Amg9ln9UAAAA=[0mSVOD-STB QA/Generate" build number [8mha:////4IIBaxhldyCiVOPlZa6jxVyo4DDELe8oODLtEVkvpexWAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYl/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqr6ZMQCK2CsG1wAAAA==[0m63
+originally caused by:
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost
+[SendPost] $ cmd /c call C:\Windows\TEMP\jenkins2325743375655378036.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\collection1.json" 
+newman
+
+Irdeto Test Suit
+
+□ SVOD
+└ SVOD-STB
+  POST http://172.16.103.244:8652/Metadata [200 OK, 250B, 23.6s]
+  √  Body matches string
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        1 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 23.7s                     │
+├───────────────────────────────────────────────┤
+│ total data received: 117B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 23.6s                  │
+└───────────────────────────────────────────────┘
+Finished: SUCCESS

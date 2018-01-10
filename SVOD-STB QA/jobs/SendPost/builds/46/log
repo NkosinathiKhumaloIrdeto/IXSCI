@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4DbscZDOjf81QRsI4LpWfYUH5SXDeVw0NeIUN6mRyGs0AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4Amg9ln9UAAAA=[0mSVOD-STB QA/Generate" build number [8mha:////4N33FZIObS7nsiw0EXYu0kvRQ4Ims55sYkclMAIxhotDAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYl/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqr6JMQAIuh001wAAAA==[0m43
+originally caused by:
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost
+[SendPost] $ cmd /c call C:\Windows\TEMP\jenkins6839464511890261032.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost>newman C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\collection1.json --exitCode 1 
+'newman' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost>exit 9009 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

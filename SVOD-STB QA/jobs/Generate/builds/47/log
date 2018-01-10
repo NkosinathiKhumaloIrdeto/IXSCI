@@ -1,0 +1,9 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson7659413171004618075.groovy"
+Caught: java.lang.StringIndexOutOfBoundsException: String index out of range: 4
+java.lang.StringIndexOutOfBoundsException: String index out of range: 4
+	at java_lang_String$substring.call(Unknown Source)
+	at hudson7659413171004618075.run(hudson7659413171004618075.groovy:16)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

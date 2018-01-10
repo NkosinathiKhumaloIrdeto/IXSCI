@@ -1,0 +1,13 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson6808540868615288457.groovy"
+
+Done updating xml: genref:3032001 udi:162SVOD23 seriesid:3114
+
+==================================================================
+
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The network path was not found)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The network path was not found)
+	at hudson6808540868615288457.run(hudson6808540868615288457.groovy:61)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,18 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)\hudson6466342866110094607.groovy"
+
+Done updating xml: genref:23108943 udi:MOT_2154383_MGP_AUT_M2_HD5 seriesid:42616 seasonid:50150
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/STK88041_PP.png
+
+==================================================================
+
+
+Done dropping asset: MOT_2154383_MGP_AUT_M2_HD5.mxf
+
+==================================================================
+
+Finished: SUCCESS

@@ -1,0 +1,17 @@
+Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)\hudson4851172302585685345.groovy"
+
+Done updating xml: genref:6508947 udi:436SVOD65 seriesid:8107 seasonid:9325
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/8107.png
+
+==================================================================
+
+Caught: java.io.IOException: The network path was not found
+java.io.IOException: The network path was not found
+	at hudson4851172302585685345.run(hudson4851172302585685345.groovy:83)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

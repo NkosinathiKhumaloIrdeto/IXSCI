@@ -1,0 +1,4 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5154153366761706831.groovy"
+Finished: SUCCESS

@@ -1,0 +1,56 @@
+{
+	"info": {
+		"name": "SS",
+		"_postman_id": "78d71b75-a2cd-8034-16c4-ccbf4620e773",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7a1231a9-2368-45f7-a8bf-f32cc69d3cfc",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"success\");",
+							"});"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<api version=\"5.0\" createddatetime=\"14-08-2017T09:34:56Z\">\r\n\t<mediaservice type=\"Catch Up\" vodtype=\"SVOD\" scheduleplanmonth=\"Aug-2017\">\r\n\t\t<program genref=\"{#Project#SSgenRef}\" region=\"E36B\" scheduleid=\"{#Project#SSscheduleid}\" uid=\"{#Project#SSuid}\" priority=\"3\" express=\"N\">\r\n\t\t\t<metadata crud=\"I\">\r\n\t\t\t\t<pgrating>FAM</pgrating>\r\n\t\t\t\t<linearservice>\r\n\t\t\t\t\t<primary>230</primary>\r\n\t\t\t\t\t<secondary>SH2,S24</secondary>\r\n\t\t\t\t</linearservice>\r\n\t\t\t\t<hdsdpvrtitle>Bike and Car Racing</hdsdpvrtitle>\r\n\t\t\t\t<serid>{#Project#SSseriesId}</serid>\r\n\t\t\t\t<seriestitle>DTEST</seriestitle>\r\n\t\t\t\t<totalseasonepisodes>12</totalseasonepisodes>\r\n\t\t\t\t<seasonid>{#Project#SSseasonID}</seasonid>\r\n\t\t\t\t<seasonnumber>1</seasonnumber>\r\n\t\t\t\t<stackid>{#Project#SSStackID}</stackid>\r\n\t\t\t\t<title>Sport Series Test 6ID</title>\r\n\t\t\t\t<runtimemins>00:05:00</runtimemins>\r\n\t\t\t\t<eventid>7526903</eventid>\r\n\t\t\t\t<epgcontentid/>\r\n\t\t\t\t<yearofrelease/>\r\n\t\t\t\t<episodenumber>1</episodenumber>\r\n\t\t\t\t<primarygenre>Sport|All Sport</primarygenre>\r\n\t\t\t\t<secondarygenres>Sport|Motorcycling</secondarygenres>\r\n\t\t\t\t<actors/>\r\n\t\t\t\t<director/>\r\n\t\t\t\t<synopsis>\r\n\t\t\t\t\t<series/>\r\n\t\t\t\t\t<season/>\r\n\t\t\t\t\t<title>Bike and Car Racing</title>\r\n\t\t\t\t</synopsis>\r\n\t\t\t\t<suppliercountry/>\r\n\t\t\t\t<showtype>Highlight</showtype>\r\n\t\t\t\t<studiocode/>\r\n\t\t\t\t<studioname/>\r\n\t\t\t\t<theme>Sport</theme>\r\n\t\t\t\t<advisories/>\r\n\t\t\t\t<linearpremierdatetime>13-08-2017 12:00:00</linearpremierdatetime>\r\n\t\t\t\t<datetimeschedulecreated>10-08-2017 15:13:15</datetimeschedulecreated>\r\n\t\t\t\t<media>\r\n\t\t\t\t\t<audiotype>Stereo</audiotype>\r\n\t\t\t\t\t<format>HD</format>\r\n\t\t\t\t\t<aspectratio>16:9</aspectratio>\r\n\t\t\t\t\t<language>English</language>\r\n\t\t\t\t\t<estimatedarrival>13-08-2017 14:45:00</estimatedarrival>\r\n\t\t\t\t</media>\r\n\t\t\t\t<sponsorship>\r\n\t\t\t\t\t<sponsordurations/>\r\n\t\t\t\t\t<sponsormediaCodes/>\r\n\t\t\t\t\t<sponsormediaids/>\r\n\t\t\t\t\t<sponsor/>\r\n\t\t\t\t</sponsorship>\r\n\t\t\t</metadata>\r\n\t\t\t<schedule crud=\"I\" scheduleid=\"{#Project#SSscheduleid}\">\r\n\t\t\t\t<delivery platform=\"SAT\">\r\n\t\t\t\t\t<mediadevice code=\"EXP,HDP,SDP\">\r\n\t\t\t\t\t\t<compatibility type=\"PUSH\">\r\n\t\t\t\t\t\t\t<countries>\r\n\t\t\t\t\t\t\t\t<country id=\"BEN,BFA,BDI,CMR,CPV,CAF,TCD,COG,DJI,COD,GNQ,ERI,ETH,GAB,GMB,GHA,GIN,GNB,CIV,KEN,LBR,MDG,MLI,MRT,MUS,NER,NGA,RWA,STP,SEN,SYC,SLE,SOM,SDN,TZA,TGO,UGA\">\r\n\t\t\t\t\t\t\t\t\t<bouquet id=\"PREM,EXTR,CPLUS,COMP\">\r\n\t\t\t\t\t\t\t\t\t\t<subbouquet/>\r\n\t\t\t\t\t\t\t\t\t\t<startdate>04-10-2017 14:45:00</startdate>\r\n\t\t\t\t\t\t\t\t\t\t<enddate>29-12-2017 13:45:00</enddate>\r\n\t\t\t\t\t\t\t\t\t</bouquet>\r\n\t\t\t\t\t\t\t\t</country>\r\n\t\t\t\t\t\t\t</countries>\r\n\t\t\t\t\t\t</compatibility>\r\n\t\t\t\t\t</mediadevice>\r\n\t\t\t\t</delivery>\r\n\t\t\t\t<delivery platform=\"OTT\">\r\n\t\t\t\t\t<mediadevice code=\"IPHONE,WIN\">\r\n\t\t\t\t\t\t<compatibility type=\"STREAMING,DOWNLOAD\">\r\n\t\t\t\t\t\t\t<countries>\r\n\t\t\t\t\t\t\t\t<country id=\"BEN,BFA,BDI,CMR,CPV,CAF,TCD,COG,DJI,COD,GNQ,ERI,ETH,GAB,GMB,GHA,GIN,GNB,CIV,KEN,LBR,MDG,MLI,MRT,MUS,NER,NGA,RWA,STP,SEN,SYC,SLE,SOM,SDN,TZA,TGO,UGA\">\r\n\t\t\t\t\t\t\t\t\t<bouquet id=\"PREM,EXTR,CPLUS,COMP,FAMILY,ACCESS,EASYVIEW\">\r\n\t\t\t\t\t\t\t\t\t\t<subbouquet/>\r\n\t\t\t\t\t\t\t\t\t\t<startdate>04-10-2017 14:45:00</startdate>\r\n\t\t\t\t\t\t\t\t\t\t<enddate>29-12-2017 13:45:00</enddate>\r\n\t\t\t\t\t\t\t\t\t</bouquet>\r\n\t\t\t\t\t\t\t\t</country>\r\n\t\t\t\t\t\t\t</countries>\r\n\t\t\t\t\t\t</compatibility>\r\n\t\t\t\t\t</mediadevice>\r\n\t\t\t\t\t<mediadevice code=\"EXP\">\r\n\t\t\t\t\t\t<compatibility type=\"DOWNLOAD\">\r\n\t\t\t\t\t\t\t<countries>\r\n\t\t\t\t\t\t\t\t<country id=\"BEN,BFA,BDI,CMR,CPV,CAF,TCD,COG,DJI,COD,GNQ,ERI,ETH,GAB,GMB,GHA,GIN,GNB,CIV,KEN,LBR,MDG,MLI,MRT,MUS,NER,NGA,RWA,STP,SEN,SYC,SLE,SOM,SDN,TZA,TGO,UGA\">\r\n\t\t\t\t\t\t\t\t\t<bouquet id=\"PREM,EXTR,CPLUS,COMP,FAMILY,ACCESS,EASYVIEW\">\r\n\t\t\t\t\t\t\t\t\t\t<subbouquet/>\r\n\t\t\t\t\t\t\t\t\t\t<startdate>04-10-2017 14:45:00</startdate>\r\n\t\t\t\t\t\t\t\t\t\t<enddate>29-12-2017 13:45:00</enddate>\r\n\t\t\t\t\t\t\t\t\t</bouquet>\r\n\t\t\t\t\t\t\t\t</country>\r\n\t\t\t\t\t\t\t</countries>\r\n\t\t\t\t\t\t</compatibility>\r\n\t\t\t\t\t</mediadevice>\r\n\t\t\t\t\t<mediadevice code=\"SSCOM\">\r\n\t\t\t\t\t\t<compatibility type=\"STREAMING\">\r\n\t\t\t\t\t\t\t<countries>\r\n\t\t\t\t\t\t\t\t<country id=\"BEN,BFA,BDI,CMR,CPV,CAF,TCD,COG,DJI,COD,GNQ,ERI,ETH,GAB,GMB,GHA,GIN,GNB,CIV,KEN,LBR,MDG,MLI,MRT,MUS,NER,NGA,RWA,STP,SEN,SYC,SLE,SOM,SDN,TZA,TGO,UGA\">\r\n\t\t\t\t\t\t\t\t\t<bouquet id=\"PREM,EXTR,CPLUS,COMP,FAMILY,ACCESS,EASYVIEW\">\r\n\t\t\t\t\t\t\t\t\t\t<subbouquet/>\r\n\t\t\t\t\t\t\t\t\t\t<startdate>04-10-2017 14:45:00</startdate>\r\n\t\t\t\t\t\t\t\t\t\t<enddate>29-12-2017 13:45:00</enddate>\r\n\t\t\t\t\t\t\t\t\t</bouquet>\r\n\t\t\t\t\t\t\t\t</country>\r\n\t\t\t\t\t\t\t</countries>\r\n\t\t\t\t\t\t</compatibility>\r\n\t\t\t\t\t</mediadevice>\r\n\t\t\t\t</delivery>\r\n\t\t\t</schedule>\r\n\t\t</program>\r\n\t</mediaservice>\r\n</api>\t\t"
+				},
+				"url": {
+					"raw": "http://172.16.103.244:8652/Metadata",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"103",
+						"244"
+					],
+					"port": "8652",
+					"path": [
+						"Metadata"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

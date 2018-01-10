@@ -1,0 +1,6 @@
+Started by upstream project "[8mha:////4DbscZDOjf81QRsI4LpWfYUH5SXDeVw0NeIUN6mRyGs0AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4Amg9ln9UAAAA=[0mSVOD-STB QA/Generate" build number [8mha:////4JlQ8zFPImSOBnKNryIGCHqun/YvG6f7IZy8vikClA5XAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYl/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqr6JEQCeihpD1wAAAA==[0m42
+originally caused by:
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost
+[SendPost] $ "C:\Program Files (x86)\Git\git-bash.exe" -xe C:\Windows\TEMP\jenkins2132906400246117932.sh
+Finished: SUCCESS

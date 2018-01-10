@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H/60 * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
+      <scriptSource class="hudson.plugins.groovy.StringScriptSource">
+        <command>/*GENERATE FIRST*/
+
+//File file = new File(&quot;SVOD-STB.txt&quot;)
+//def newline = System.getProperty(&quot;line.separator&quot;)
+
+//generate and convert value to string
+def svodGenref =  String.valueOf(((int)((Math.random()*719359467)+1))).substring(0, 7)
+
+//uiD setup
+def svoduid_full = String.valueOf(((int)((Math.random()*99999)+1)))
+def svoduid_4digits = svoduid_full.substring(0, 3)
+def svoduid_2digits = svoduid_full.substring(2, 4)
+def svoduid = svoduid_4digits + &quot;SVOD&quot; + svoduid_2digits
+//uiD setup
+
+def svodSeriesId = String.valueOf(((int)((Math.random()*99999)+1))).substring(0, 4)
+
+//file &lt;&lt; &quot;generef#&quot;+svodGenref +&quot;~&quot;+ &quot;uid#&quot;+svoduid +&quot;~&quot;+ &quot;seariesid#&quot;+svodSeriesId
+
+/*GENERATE FIRST*/
+
+//read file:
+def xmlContents = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/jobs/Generate/collection.json&quot;).getText()
+
+//where to put new file
+def networkPath =  &quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/jobs/Generate/collection1.json&quot;
+
+
+//put values in array
+def vals = [svodGenref,svoduid,svodSeriesId]
+//log.info vals
+
+def keys = [&quot;{#Project#svodGenref}&quot;,&quot;{#Project#svoduid}&quot;,&quot;{#Project#svodSeriesId}&quot;]
+//log.info keys
+
+def key = keys[0]
+
+for(def i = 0; i &lt; 3; ++i){
+	//log.info xmlContents//keys[i] + &quot; &quot; + vals[i]
+	
+	xmlContents = xmlContents.replace(keys[i],vals[i]);	
+	
+}
+
+File file = new File(networkPath)
+
+file.text = xmlContents
+
+println &quot;&quot;
+println &quot;Done updating xml: genref:&quot; + svodGenref + &quot; udi:&quot; + svoduid + &quot; seriesid:&quot; + svodSeriesId
+println &quot;&quot;
+
+println &quot;==================================================================&quot;
+println &quot;&quot;
+/*DROP IMAGE==============================================================*/
+def soureFileImg = &quot;//172.16.103.220/MediaManager/Automation image ingest/automation.png&quot;
+def destFileImg = &quot;//172.16.103.220/MediaManager/Images/&quot;
+def extImg =  soureFileImg.substring(soureFileImg.length() - 4)
+def seriesIdImg = svodSeriesId
+
+def srcStreamImg = new File(soureFileImg).newDataInputStream()
+def dstStreamImg = new File(destFileImg + svodSeriesId + extImg).newDataOutputStream()
+dstStreamImg &lt;&lt; srcStreamImg
+srcStreamImg.close()
+dstStreamImg.close()
+
+println &quot;Done dropping image: &quot; + destFileImg + seriesIdImg + extImg
+
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+/*DROP ASSET==============================================================*/
+//specify source &amp; dest
+def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_sm.mxf&quot;
+
+
+def destFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&quot;
+
+//get the file extension
+def extAss =  soureFileAss.substring(soureFileAss.length() - 4)
+
+//get new file name values
+def newfilenameAss = svodGenref + &quot;_&quot; + svoduid + extAss
+
+def srcStreamAss = new File(soureFileAss).newDataInputStream()
+def dstStreamAss = new File(destFileAss + newfilenameAss).newDataOutputStream()
+
+dstStreamAss &lt;&lt; srcStreamAss
+srcStreamAss.close()
+dstStreamAss.close()
+
+println &quot;&quot;
+println &quot;Done dropping asset: &quot; + newfilenameAss
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+
+</command>
+      </scriptSource>
+      <groovyName>Groovy1.5.4</groovyName>
+      <parameters></parameters>
+      <scriptParameters></scriptParameters>
+      <properties></properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
+  </builders>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>SendPost</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

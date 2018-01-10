@@ -1,0 +1,5 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson9015003399605445054.groovy"
+Triggering a new build of [8mha:////4K/ZmhecUpeJ7cKQfETRTydkab3ELY9lNu9YYmi9QaQsAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHiEhqXkpAfnGJPgDrXs1Z1QAAAA==[0mSVOD-STB QA » SendPost
+Finished: SUCCESS

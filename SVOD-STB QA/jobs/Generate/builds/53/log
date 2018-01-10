@@ -1,0 +1,33 @@
+Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy"
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy: 67: The current scope already contains a variable of the name soureFile
+ @ line 67, column 5.
+   def soureFile = "//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_sm.mxf"
+       ^
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy: 70: The current scope already contains a variable of the name destFile
+ @ line 70, column 5.
+   def destFile = "//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/"
+       ^
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy: 73: The current scope already contains a variable of the name ext
+ @ line 73, column 5.
+   def ext =  soureFile.substring(soureFile.length() - 4)
+       ^
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy: 78: The current scope already contains a variable of the name srcStream
+ @ line 78, column 5.
+   def srcStream = new File(soureFile).newDataInputStream()
+       ^
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson5799667052812331299.groovy: 79: The current scope already contains a variable of the name dstStream
+ @ line 79, column 5.
+   def dstStream = new File(destFile + newfilename).newDataOutputStream()
+       ^
+
+5 errors
+
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

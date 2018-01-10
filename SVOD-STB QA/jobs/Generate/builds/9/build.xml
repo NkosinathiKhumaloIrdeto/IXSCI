@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+          <int>9</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>46</queueId>
+  <timestamp>1515529682624</timestamp>
+  <startTime>1515529682841</startTime>
+  <result>SUCCESS</result>
+  <duration>9773</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate</workspace>
+  <hudsonVersion>2.101</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

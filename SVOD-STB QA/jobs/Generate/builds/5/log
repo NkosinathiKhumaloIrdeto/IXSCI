@@ -1,0 +1,8 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson7044923017646596121.groovy"
+Caught: java.io.FileNotFoundException: C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\UpdateXml\collection.json (The system cannot find the path specified)
+java.io.FileNotFoundException: C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\UpdateXml\collection.json (The system cannot find the path specified)
+	at hudson7044923017646596121.run(hudson7044923017646596121.groovy:23)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE
