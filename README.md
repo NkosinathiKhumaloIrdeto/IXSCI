@@ -8,6 +8,7 @@ Integration test for IXS
 3. Once the above is installed, open your cmd(win-key + R, type 'cmd') and install 'newman' globaly by typing the following in the command prompt: npm install newman -g
 4. Once that's done, navigate to Jenkins jobs folder: C:\Program Files (x86)\Jenkins\jobs
 5. Clone this repo into this folder (C:\Program Files (x86)\Jenkins\jobs)
+6. Start-up Jenkins on http://localhost:8080
 
 All set.
 
