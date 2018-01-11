@@ -1,0 +1,35 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)\hudson3197622506845247365.groovy"
+
+Done updating xml: genref:2574059 udi:669SVOD99 seriesid:2256 seasonid:2266
+
+==================================================================
+
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The network path was not found)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The network path was not found)
+	at hudson3197622506845247365.run(hudson3197622506845247365.groovy:53)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

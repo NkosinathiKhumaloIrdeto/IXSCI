@@ -1,0 +1,50 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)\hudson764515325950758481.groovy"
+
+Done updating xml: genref:57144356 udi:MOT_3282636_MGP_AUT_M2_HD5 seriesid:10603 seasonid:74536
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/STK99787_PP.png
+
+==================================================================
+
+
+Done dropping asset: MOT_3282636_MGP_AUT_M2_HD5.mxf
+
+==================================================================
+
+Finished: SUCCESS

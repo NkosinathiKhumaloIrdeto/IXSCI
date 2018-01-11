@@ -1,0 +1,15 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)\hudson4720206857738878139.groovy"
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\SS_XML\ss.xml (The specified network name is no longer available)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\SS_XML\ss.xml (The specified network name is no longer available)
+	at hudson4720206857738878139.run(hudson4720206857738878139.groovy:38)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

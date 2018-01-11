@@ -22,14 +22,12 @@
 
 //generate and convert value to string
 def genref =  String.valueOf(((int)((Math.random()*919359467)+1))).substring(0, 8)
-
-//uiD setup
 def uid = String.valueOf(((int)((Math.random()*99367467)+1))).substring(0, 7)
-
-def seriesId = String.valueOf(((int)((Math.random()*99999)+1))).substring(0, 5)
+def scheduleID = uid
+uid = &quot;MOT_&quot; + uid + &quot;_MGP_AUT_M2_HD5&quot;
+def seriesID = String.valueOf(((int)((Math.random()*99999)+1))).substring(0, 4)
 def stackID = &quot;STK&quot; + String.valueOf(((int)((Math.random()*999999)+1))).substring(0, 5)
-def seariesID = String.valueOf(((int)((Math.random()*999999)+1))).substring(0, 4)
-def ssSeasonID = String.valueOf(((int)((Math.random()*99999999)+1))).substring(0, 5)
+def seasonID = String.valueOf(((int)((Math.random()*999999)+1))).substring(0, 5)
 
 /*GENERATE FIRST*/
 
@@ -40,10 +38,19 @@ def xmlContents = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SS/xml.xml&
 def networkPath = &quot;//172.16.103.220/MediaManager/SS_XML/ss.xml&quot;
 
 //put values in array
-def vals = [genref,uid,&quot;MOT_&quot; + uid + &quot;_MGP_AUT_M2_HD5&quot;,seriesId, ssSeasonID,stackID]
+def vals = [genref,
+scheduleID,
+uid,
+seriesID,
+seasonID,
+stackID]
 
-def keys = [&quot;{#Project#SSgenRef}&quot;,&quot;{#Project#SSscheduleid}&quot;,&quot;{#Project#SSuid}&quot;, &quot;{#Project#SSseriesId}&quot;, &quot;{#Project#SSseasonID}&quot;, &quot;{#Project#SSStackID}&quot;]
-
+def keys = [&quot;{#Project#SSgenRef}&quot;,
+&quot;{#Project#SSscheduleid}&quot;,
+&quot;{#Project#SSuid}&quot;, 
+&quot;{#Project#SSseriesId}&quot;, 
+&quot;{#Project#SSseasonID}&quot;, 
+&quot;{#Project#SSStackID}&quot;]
 
 def key = keys[0]
 
@@ -58,32 +65,18 @@ File file = new File(networkPath)
 file.text = xmlContents
 
 println &quot;&quot;
-println &quot;Done updating xml: genref:&quot; + genref + &quot; udi:&quot; + &quot;MOT_&quot; + uid + &quot;_MGP_AUT_M2_HD5&quot; + &quot; seriesid:&quot; + seriesId + &quot; seasonid:&quot; + ssSeasonID
+println &quot;Done updating xml: genref:&quot; + genref + &quot; udi:&quot; + uid + &quot; seriesid:&quot; + seriesID + &quot; stackID:&quot; + stackID
 println &quot;&quot;
 
 println &quot;==================================================================&quot;
 println &quot;&quot;
 /*DROP IMAGE==============================================================*/
-def soureFileImg = &quot;//172.16.103.220/MediaManager/Automation image ingest/automation.png&quot;
-def destFileImg = &quot;//172.16.103.220/MediaManager/Images/&quot;
-def extImg =  soureFileImg.substring(soureFileImg.length() - 4)
-
-
-def srcStreamImg = new File(soureFileImg).newDataInputStream()
-def dstStreamImg = new File(destFileImg + stackID +&quot;_PP&quot;+ extImg).newDataOutputStream()
-dstStreamImg &lt;&lt; srcStreamImg
-srcStreamImg.close()
-dstStreamImg.close()
-
-println &quot;Done dropping image: &quot; + destFileImg + stackID +&quot;_PP&quot; + extImg
-
-println &quot;&quot;
-println &quot;==================================================================&quot;
-println &quot;&quot;
+ 	
 
 /*DROP ASSET==============================================================*/
 //specify source &amp; dest
-def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_sm.mxf&quot;
+println &quot;Dropping asset...&quot;
+def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_ssm.mxf&quot;
 
 def destFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&quot;
 
@@ -91,7 +84,7 @@ def destFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&
 def extAss =  soureFileAss.substring(soureFileAss.length() - 4)
 
 //get new file name values
-def newfilenameAss = &quot;MOT_&quot; + uid + &quot;_MGP_AUT_M2_HD5&quot; + extAss
+def newfilenameAss = uid + extAss
 
 def srcStreamAss = new File(soureFileAss).newDataInputStream()
 def dstStreamAss = new File(destFileAss + newfilenameAss).newDataOutputStream()

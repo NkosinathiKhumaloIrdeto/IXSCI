@@ -11,7 +11,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/15 * * * *</spec>
+      <spec>H/10 * * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -84,7 +84,7 @@ println &quot;&quot;
 
 /*DROP ASSET==============================================================*/
 //specify source &amp; dest
-def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_sm.mxf&quot;
+def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_ssm.mxf&quot;
 
 def destFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&quot;
 

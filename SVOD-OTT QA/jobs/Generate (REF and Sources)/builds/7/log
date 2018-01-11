@@ -1,0 +1,17 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)\hudson3232486683237252360.groovy"
+
+Done updating xml: genref:6087743 udi:474SVOD49 seriesid:9041 seasonid:5786
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/9041_PP.png
+
+==================================================================
+
+Caught: java.io.IOException: The network path was not found
+java.io.IOException: The network path was not found
+	at hudson3232486683237252360.run(hudson3232486683237252360.groovy:80)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE
