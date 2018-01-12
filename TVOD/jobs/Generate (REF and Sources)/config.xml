@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
+      <scriptSource class="hudson.plugins.groovy.StringScriptSource">
+        <command>//generate and convert value to string
+def tvodGenref =  generateUniqueNumber(log)
+
+//alphabet array
+def alpha = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;] as String[]
+
+//generate tvodID
+def tvodUid =  tvodGenref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + tvodGenref.substring(3, 4) + &quot;TVOD&quot;
+
+//generate genrefid for trailerid
+
+tvodGenref = generateUniqueNumber(log)
+
+//set trailer id
+def trailerUid = tvodGenref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + tvodGenref.substring(3, 4) + &quot;TVOD&quot;
+
+//function to generate unique number
+def generateUniqueNumber(logfile){
+	
+	def contLoop = true
+	
+	def newid = &quot;&quot;//String.valueOf(((double)((Math.random()*999999999)+1))).substring(0, 8) 
+
+	while(contLoop){
+
+		newid = String.valueOf(((int)((Math.random()*99999999)+1))).substring(0, 8) 
+
+		if(!checkID(newid, logfile)){
+
+			contLoop = false;
+			
+		}
+			
+	}
+	
+	return newid
+}</command>
+      </scriptSource>
+      <groovyName>Groovy1.5.4</groovyName>
+      <parameters></parameters>
+      <scriptParameters></scriptParameters>
+      <properties></properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

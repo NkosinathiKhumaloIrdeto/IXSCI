@@ -1,0 +1,19 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson7905226312891750509.groovy"
+
+Done updating xml: genref:9028900 udi:393SVOD30 seriesid:7154
+
+==================================================================
+
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The specified network name is no longer available)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The specified network name is no longer available)
+	at hudson7905226312891750509.run(hudson7905226312891750509.groovy:61)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE
