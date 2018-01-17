@@ -1,0 +1,37 @@
+Started by upstream project "[8mha:////4J4duyf7txNpMujfOdhTTvxirbHxkFWQOphtLtdobbOOAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZt/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1AXaZtobgAAAA[0mSVOD-STB QA/Check For Files" build number [8mha:////4OXjGuYhHSEMhAcLBiQ6ijAICpyl7B9uddzqFhwOmwQjAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZd/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1TQwBT1NfNuIAAAA=[0m41
+originally caused by:
+ Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll
+[ApproveAll] $ cmd /c call C:\Windows\TEMP\jenkins4069941774822189908.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\SVOD-STB-APPROVE-ALL1.json" 
+newman
+
+SVOD-STB-APPROVE ALL
+
+→ Send an Approval for All SVOD STB Programs
+  GET http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=1196383 [200 OK, 609B, 560ms]
+  √  Status code is 200
+  √  Expected result Approved
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        2 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 696ms                     │
+├───────────────────────────────────────────────┤
+│ total data received: 415B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 560ms                  │
+└───────────────────────────────────────────────┘
+Triggering a new build of [8mha:////4DTAiyNU+BcCnKuyHs6SDNb+Fsx2jfp6xA5OH42agze8AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4A8aD1btUAAAA=[0mSVOD-STB QA � Generate
+Finished: SUCCESS

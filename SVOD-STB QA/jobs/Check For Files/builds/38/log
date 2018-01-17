@@ -1,0 +1,21 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson7175677425482687803.groovy"
+
+Folder(s) scanned: 
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/5531295_11103
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/5531295_11203
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/5531295_11303
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/5531295_11403
+
+SD - X
+HD - X
+EXP - X
+NAN - X
+
+Caught: NoProcessedException: Not all files were processed...
+NoProcessedException: Not all files were processed...
+	at hudson7175677425482687803.run(hudson7175677425482687803.groovy:87)
+Build step 'Execute Groovy script' marked build as failure
+Sending e-mails to: Nkosinathi.Khumalo@irdeto.com
+Finished: FAILURE

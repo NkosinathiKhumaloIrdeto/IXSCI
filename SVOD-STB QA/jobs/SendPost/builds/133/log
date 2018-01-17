@@ -1,0 +1,40 @@
+Started by upstream project "[8mha:////4DbscZDOjf81QRsI4LpWfYUH5SXDeVw0NeIUN6mRyGs0AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4Amg9ln9UAAAA=[0mSVOD-STB QA/Generate" build number [8mha:////4Da+yLL7xPD7JsOGpjekbstOiHC7RJxVrdwk33/waDrKAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZl/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqr6hiREAlaBJhtgAAAA=[0m142
+originally caused by:
+ Started by upstream project "[8mha:////4NhRugMFJ2V1yFjjTrtqC9hD2iLPQHhKCaGSh/MvuJ2gAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JP3gMH8X3eAQJ1Ujg0BHsIhjQUFRflmqY06OPgDsZOSf1wAAAA==[0mSVOD-STB QA/ApproveAll" build number [8mha:////4BSRcHzAaOpZthdn+D7q3yqrujUmgU2dxjTksSGnZzqBAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmX9rPwk/eAwfxfd4BAnVSODQEewiGNBQVF+WapjTo6+KQAELpq52AAAAA==[0m5
+ originally caused by:
+  Started by upstream project "[8mha:////4J4duyf7txNpMujfOdhTTvxirbHxkFWQOphtLtdobbOOAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZt/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1AXaZtobgAAAA[0mSVOD-STB QA/Check For Files" build number [8mha:////4OXjGuYhHSEMhAcLBiQ6ijAICpyl7B9uddzqFhwOmwQjAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZd/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1TQwBT1NfNuIAAAA=[0m41
+  originally caused by:
+   Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost
+[SendPost] $ cmd /c call C:\Windows\TEMP\jenkins8877478844168705962.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\SendPost>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\collection1.json" 
+newman
+
+Irdeto Test Suit
+
+□ SVOD
+└ SVOD-STB
+  POST http://172.16.103.244:8652/Metadata [200 OK, 250B, 23.3s]
+  √  Body matches string
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        1 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 23.4s                     │
+├───────────────────────────────────────────────┤
+│ total data received: 117B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 23.3s                  │
+└───────────────────────────────────────────────┘
+Finished: SUCCESS

@@ -11,7 +11,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/20 * * * *</spec>
+      <spec>H/49 * * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -127,6 +127,11 @@ if((a1 &gt;= 2) &amp;&amp; (a2 &gt;= 2) &amp;&amp; (a3 &gt;= 2) &amp;&amp; (a4 &
         <completeBuild>true</completeBuild>
       </threshold>
     </hudson.tasks.BuildTrigger>
+    <hudson.tasks.Mailer plugin="mailer@1.20">
+      <recipients>Nkosinathi.Khumalo@irdeto.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
   </publishers>
   <buildWrappers/>
 </project>

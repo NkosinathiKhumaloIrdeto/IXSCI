@@ -1,0 +1,41 @@
+Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll
+[ApproveAll] $ cmd /c call C:\Windows\TEMP\jenkins7301641252428354127.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\SVOD-STB-APPROVE-ALL1.json" 
+newman
+
+SVOD-STB-APPROVE ALL
+
+→ http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=8220701
+  GET http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=4130399 [200 OK, 504B, 304ms]
+  √  Status code is 200
+  1. Approved
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        2 │        1 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 420ms                     │
+├───────────────────────────────────────────────┤
+│ total data received: 310B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 304ms                  │
+└───────────────────────────────────────────────┘
+
+  #  failure         detail                                                                                                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                    
+ 1.  AssertionError  expected 'Program Id:14461 with platformIS20-SVOD-SD-All is not ready for QA\nProgram Id:14463 with platformIS20-SVOD-HD-All is not ready for QA\nProgram Id:14465 with platformIS20-SVOD-Explora-All is not ready for QA\nApproved: 14467\nProgram Id: 14467 with platformIS20-SVOD-Nano-All is Approved\nstring(12) "Message sent"\n' to include 'string_you_want_to_search' 
+                     at assertion:1 in test-script                                                                                                                                                                                                                                                                                                                                                  
+                     inside "http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=8220701"                                                                                                                                                                                                                                                                              
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

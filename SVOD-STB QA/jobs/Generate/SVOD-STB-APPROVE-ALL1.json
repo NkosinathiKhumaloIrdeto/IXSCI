@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=8220701",
+			"name": "Send an Approval for All SVOD STB Programs",
 			"event": [
 				{
 					"listen": "test",
@@ -19,8 +19,8 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Approved\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");",
+							"pm.test(\"Expected result Approved\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"Approved\");",
 							"});"
 						]
 					}
@@ -31,7 +31,7 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=4216227",
+					"raw": "http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=5517411",
 					"protocol": "http",
 					"host": [
 						"172",
@@ -51,7 +51,7 @@
 						},
 						{
 							"key": "genrefId",
-							"value": "4216227",
+							"value": "5517411",
 							"equals": true
 						}
 					]

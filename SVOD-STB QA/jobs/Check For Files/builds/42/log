@@ -1,0 +1,28 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson8320610750401719438.groovy"
+
+Folder(s) scanned: 
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/3894003_11103
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11103\Protected\IS20_3894003_814SVOD45_SD_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11103\Transcoded\IS20_3894003_814SVOD45_SD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/3894003_11203
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11203\Protected\IS20_3894003_814SVOD45_HD_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11203\Protected\IS20_3894003_814SVOD45_HD_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11203\Transcoded\IS20_3894003_814SVOD45_HD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/3894003_11303
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11303\Protected\IS20_3894003_814SVOD45_Explora_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11303\Protected\IS20_3894003_814SVOD45_Explora_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11303\Transcoded\IS20_3894003_814SVOD45_Explora_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/3894003_11403
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11403\Protected\IS20_3894003_814SVOD45_Nano_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11403\Protected\IS20_3894003_814SVOD45_Nano_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\3894003_11403\Transcoded\IS20_3894003_814SVOD45_Nano_m1.mpg
+
+SD - YES
+HD - YES
+EXP - YES
+NAN - YES
+
+Triggering a new build of [8mha:////4EM9F7g+xCGHCfspP00UWqXu01/YWpQCc10nfwDgjZWaAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgYl/az8JP3gMH8X3eAQJ1Ujg0BHsIhjQUFRflmqY06OPgC0nlWz1wAAAA==[0mSVOD-STB QA » ApproveAll
+Finished: SUCCESS

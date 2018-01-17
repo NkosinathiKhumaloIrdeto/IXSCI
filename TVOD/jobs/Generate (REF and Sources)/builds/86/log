@@ -1,0 +1,31 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson2507803085420254075.groovy"
+
+Done updating xml: genref:17464759 udi:458B8TVOD trailerUid:174X6TVOD
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/17464759.png
+
+==================================================================
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/17464759.jpg
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/17464759_174X6TVOD.mxf
+Done dropping video: //172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/17464759_174X6TVOD.mxf
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/17464759_458B8TVOD.mxf
+Terminate batch job (Y/N)? 
+Terminate batch job (Y/N)? 
+Build step 'Execute Groovy script' marked build as failure
