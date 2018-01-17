@@ -1,0 +1,51 @@
+Started by upstream project "[8mha:////4HeszdmbHevWLtf1jCHS3ve4hkPUwTU1363y1SbSec/CAAAAtR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZ9/az8JP2QMH8XMMM9NS+1KLEkVdXIQCPI1Q1IJealAMng/NKi5NRiTX0AUPABLuQAAAA=[0mTVOD/Generate (REF and Sources)" build number [8mha:////4G7Tc0/Y54u71gIKYt3az/nlkiW3vLOoZYaaEUqj1DiCAAAAtx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZD/az8JP2QMH8XMMM9NS+1KLEkVdXIQCPI1Q1IJealAMng/NKi5NRiTX1DSwBhyOI75gAAAA==[0m19
+originally caused by:
+ Started by timer
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\SendPost_TVOD
+[SendPost_TVOD] $ cmd /c call C:\Windows\TEMP\jenkins4236197949566758606.bat
+
+C:\Program Files (x86)\Jenkins\workspace\TVOD\SendPost_TVOD>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\TVOD\collection1.json" 
+newman
+
+TVOD
+
+→ TVOD
+  POST http://172.16.103.244:8652/Metadata   2. Status code is 200
+  3. Body matches string
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        1 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        2 │        2 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 21.1s                     │
+├───────────────────────────────────────────────┤
+│ total data received: 0B (approx)              │
+├───────────────────────────────────────────────┤
+│ average response time: 0ms                    │
+└───────────────────────────────────────────────┘
+
+  #  failure         detail                                                                                               
+                                                                                                                          
+ 1.  Error           connect ETIMEDOUT 172.16.103.244:8652                                                                
+                     at request                                                                                           
+                     inside "TVOD"                                                                                        
+                                                                                                                          
+ 2.  AssertionError  expected { Object (id, _details, ...) } to have property 'code'                                      
+                     at assertion:0 in test-script                                                                        
+                     inside "TVOD"                                                                                        
+                                                                                                                          
+ 3.  AssertionError  object tested must be an array, a map, an object, a set, a string, or a weakset, but undefined given 
+                     at assertion:1 in test-script                                                                        
+                     inside "TVOD"                                                                                        
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

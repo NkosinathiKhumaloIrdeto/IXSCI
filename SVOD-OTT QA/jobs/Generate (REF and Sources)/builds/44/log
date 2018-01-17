@@ -1,0 +1,18 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)\hudson4476413499464633869.groovy"
+
+Done updating xml: genref:5195056 udi:512SVOD27 seriesid:1087 seasonid:6136
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/1087_PP.png
+
+==================================================================
+
+
+Done dropping asset: 5195056_512SVOD27.mxf
+
+==================================================================
+
+Finished: SUCCESS

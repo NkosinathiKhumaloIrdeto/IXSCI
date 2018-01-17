@@ -1,0 +1,9 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson8936321138941385946.groovy"
+Caught: java.lang.StringIndexOutOfBoundsException: String index out of range: 8
+java.lang.StringIndexOutOfBoundsException: String index out of range: 8
+	at java_lang_String$substring.call(Unknown Source)
+	at hudson8936321138941385946.run(hudson8936321138941385946.groovy:2)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,15 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson777664457628360491.groovy"
+
+Done updating xml: genref:21474836 udi:677M7TVOD trailerUid:214X7TVOD
+
+==================================================================
+
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The specified network name is no longer available)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (The specified network name is no longer available)
+	at hudson777664457628360491.dropImage(hudson777664457628360491.groovy:67)
+	at hudson777664457628360491$dropImage.callCurrent(Unknown Source)
+	at hudson777664457628360491.run(hudson777664457628360491.groovy:53)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

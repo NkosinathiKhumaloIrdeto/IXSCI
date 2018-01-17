@@ -1,0 +1,21 @@
+Started by upstream project "[8mha:////4J4duyf7txNpMujfOdhTTvxirbHxkFWQOphtLtdobbOOAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZt/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1AXaZtobgAAAA[0mSVOD-STB QA/Check For Files" build number [8mha:////4E/j6z2q6gx5JLAO4l+ID1b76eaXoqR9Ulj1BtEQ60KPAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZd/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1jQ0AHvUZDuIAAAA=[0m30
+originally caused by:
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson4353050068963597660.groovy"
+
+Done updating xml: genref:4344532 udi:269SVOD99 seriesid:8855
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/8855.png
+
+==================================================================
+
+
+Done dropping asset: 4344532_269SVOD99.mxf
+
+==================================================================
+
+Triggering a new build of [8mha:////4K/ZmhecUpeJ7cKQfETRTydkab3ELY9lNu9YYmi9QaQsAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHiEhqXkpAfnGJPgDrXs1Z1QAAAA==[0mSVOD-STB QA » SendPost
+Finished: SUCCESS

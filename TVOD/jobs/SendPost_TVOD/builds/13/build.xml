@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>TVOD/Generate (REF and Sources)</upstreamProject>
+            <upstreamUrl>job/TVOD/job/Generate%20(REF%20and%20Sources)/</upstreamUrl>
+            <upstreamBuild>21</upstreamBuild>
+            <upstreamCauses>
+              <hudson.triggers.TimerTrigger_-TimerTriggerCause/>
+              <hudson.triggers.TimerTrigger_-TimerTriggerCause reference="../hudson.triggers.TimerTrigger_-TimerTriggerCause"/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>58</queueId>
+  <timestamp>1515755970935</timestamp>
+  <startTime>1515755970944</startTime>
+  <result>SUCCESS</result>
+  <duration>26644</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\workspace\TVOD\SendPost_TVOD</workspace>
+  <hudsonVersion>2.101</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

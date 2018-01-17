@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <org.jenkinsci.plugins.selfie.SelfieCause plugin="selfie-trigger-plugin@1.0">
+            <description>Time to wake up and build!!!</description>
+          </org.jenkinsci.plugins.selfie.SelfieCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>34</queueId>
+  <timestamp>1516088315771</timestamp>
+  <startTime>1516088315782</startTime>
+  <result>SUCCESS</result>
+  <duration>2825</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files</workspace>
+  <hudsonVersion>2.102</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

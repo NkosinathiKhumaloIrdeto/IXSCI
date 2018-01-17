@@ -11,7 +11,7 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/59 * * * *</spec>
+      <spec>H/30 * * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
@@ -45,7 +45,7 @@ def networkPath = &quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-OTT QA/collecti
 //put values in array
 def vals = [genref,uid,seriesId, seasonId]
 
-def keys = [&quot;{#Project#SSgenRef}&quot;,&quot;{#Project#SSuid}&quot;, &quot;{#Project#SSseriesId}&quot;, &quot;{#Project#SSseasonID}&quot;]
+def keys = [&quot;{#Project#SVODOTTgenref}&quot;,&quot;{#Project#SVODOTTuid}&quot;, &quot;{#Project#SVODOTTseriesid}&quot;, &quot;{#Project#SVODOTTseasonid}&quot;]
 
 def key = keys[0]
 
@@ -117,6 +117,16 @@ println &quot;&quot;
       <classPath></classPath>
     </hudson.plugins.groovy.Groovy>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>SendPost_OTT</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
   <buildWrappers/>
 </project>

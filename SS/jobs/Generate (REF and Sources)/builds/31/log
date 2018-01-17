@@ -1,0 +1,8 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)\hudson4594915943927298748.groovy"
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\SS_XML\ss.xml (An untrusted certificate authority was detected While processing the smartcard certificate used for authentication. Please contact your system administrator)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\SS_XML\ss.xml (An untrusted certificate authority was detected While processing the smartcard certificate used for authentication. Please contact your system administrator)
+	at hudson4594915943927298748.run(hudson4594915943927298748.groovy:45)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

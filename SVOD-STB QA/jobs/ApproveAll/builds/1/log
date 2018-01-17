@@ -1,0 +1,43 @@
+Started by upstream project "[8mha:////4J4duyf7txNpMujfOdhTTvxirbHxkFWQOphtLtdobbOOAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZt/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1AXaZtobgAAAA[0mSVOD-STB QA/Check For Files" build number [8mha:////4Ou3iar8+zLzfL+cGkgoIzVGn63+6OuxUV3qQmRKYhoRAAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZd/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1jc0AK1B65+IAAAA=[0m36
+originally caused by:
+ Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll
+[ApproveAll] $ cmd /c call C:\Windows\TEMP\jenkins5372820369326917084.bat
+
+C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\ApproveAll>C:\Users\nkosinathi.khumalo\AppData\Roaming\npm\newman run "C:\Program Files (x86)\Jenkins\jobs\SVOD-STB QA\jobs\Generate\SVOD-STB-APPROVE-ALL1.json" 
+newman
+
+SVOD-STB-APPROVE ALL
+
+→ http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=8220701
+  GET http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=4216227 [200 OK, 609B, 343ms]
+  √  Status code is 200
+  1. Approved
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        2 │        1 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 488ms                     │
+├───────────────────────────────────────────────┤
+│ total data received: 415B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 343ms                  │
+└───────────────────────────────────────────────┘
+
+  #  failure         detail                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+ 1.  AssertionError  expected 'Approved: 14361\nProgram Id: 14361 with platformIS20-SVOD-SD-All is Approved\nstring(12) "Message sent"\nApproved: 14363\nProgram Id: 14363 with platformIS20-SVOD-HD-All is Approved\nstring(12) "Message sent"\nApproved: 14365\nProgram Id: 14365 with platformIS20-SVOD-Explora-All is Approved\nstring(12) "Message sent"\nApproved: 14367\nProgram Id: 14367 with platformIS20-SVOD-Nano-All is Approved\nstring(12) "Message sent"\n' to include 'string_you_want_to_search' 
+                     at assertion:1 in test-script                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                     inside "http://172.16.103.237:8008/AutomatedTesting.php?task=approveAllPrograms&genrefId=8220701"                                                                                                                                                                                                                                                                                                                                                                                             
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

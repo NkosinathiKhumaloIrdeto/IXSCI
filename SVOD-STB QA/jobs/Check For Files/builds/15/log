@@ -1,0 +1,9 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson5777848796926724821.groovy"
+Directory file not populated yet... aborting
+Caught: groovy.lang.MissingPropertyException: No such property: hudson for class: hudson5777848796926724821
+groovy.lang.MissingPropertyException: No such property: hudson for class: hudson5777848796926724821
+	at hudson5777848796926724821.run(hudson5777848796926724821.groovy:13)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

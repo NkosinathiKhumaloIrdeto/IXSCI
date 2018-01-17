@@ -1,0 +1,15 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson4978947325318066509.groovy"
+
+Done updating xml: genref:21474836 udi:408G7TVOD trailerUid:214G7TVOD
+
+==================================================================
+
+Caught: java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (An untrusted certificate authority was detected While processing the smartcard certificate used for authentication. Please contact your system administrator)
+java.io.FileNotFoundException: \\172.16.103.220\MediaManager\Automation image ingest\automation.png (An untrusted certificate authority was detected While processing the smartcard certificate used for authentication. Please contact your system administrator)
+	at hudson4978947325318066509.dropImage(hudson4978947325318066509.groovy:67)
+	at hudson4978947325318066509$dropImage.callCurrent(Unknown Source)
+	at hudson4978947325318066509.run(hudson4978947325318066509.groovy:53)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

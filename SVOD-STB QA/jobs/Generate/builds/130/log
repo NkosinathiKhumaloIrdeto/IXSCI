@@ -1,0 +1,8 @@
+Started by upstream project "[8mha:////4J4duyf7txNpMujfOdhTTvxirbHxkFWQOphtLtdobbOOAAAAsB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZt/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1AXaZtobgAAAA[0mSVOD-STB QA/Check For Files" build number [8mha:////4FuVIgRCgXM4cOFvkZQQjbsotCkKjH1ELF57ex6Me9o8AAAAsh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZd/az8JP3gMH8X3eAQJ1Ujg0BHsIhzRmpyNpDrll8EIjNzUov1jQwAX8QCF+IAAAA=[0m20
+originally caused by:
+ Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson452589522406110245.groovy"
+Directory file hasn't processed yet...aborting
+Triggering a new build of [8mha:////4K/ZmhecUpeJ7cKQfETRTydkab3ELY9lNu9YYmi9QaQsAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHiEhqXkpAfnGJPgDrXs1Z1QAAAA==[0mSVOD-STB QA » SendPost
+Finished: SUCCESS

@@ -1,0 +1,19 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-OTT QA\Generate (REF and Sources)\hudson7142621327408348284.groovy"
+
+Done updating xml: genref:7158514 udi:744SVOD43 seriesid:5045 seasonid:5729
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/5045_PP.png
+
+==================================================================
+
+
+Done dropping asset: 7158514_744SVOD43.mxf
+
+==================================================================
+
+Triggering a new build of [8mha:////4Lw2jWy9H4X3yVz7r/vdKDLJfIG9x9Io7fd0rMKZN7H6AAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAypEgYV/az8JP3gMH8XXf+QEFUjg0BHiEhqXkpAfnFJPFBUHwDliPXQ2QAAAA==[0mSVOD-OTT QA » SendPost_OTT
+Finished: SUCCESS

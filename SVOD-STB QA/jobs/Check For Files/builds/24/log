@@ -1,0 +1,8 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson1266621770078986560.groovy"
+Caught: NoProcessedException: File has not been processed yet....
+NoProcessedException: File has not been processed yet....
+	at hudson1266621770078986560.run(hudson1266621770078986560.groovy:13)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

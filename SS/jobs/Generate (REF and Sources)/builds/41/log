@@ -1,0 +1,15 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SS\Generate (REF and Sources)\hudson6306660532737853290.groovy"
+
+Done updating xml: genref:31299631 udi:MOT_2218840_MGP_AUT_M2_HD5 scheduleID:2218840 stackID:STK52089
+
+==================================================================
+
+Dropping asset...
+
+Done dropping asset: MOT_2218840_MGP_AUT_M2_HD5.mxf
+
+==================================================================
+
+Finished: SUCCESS

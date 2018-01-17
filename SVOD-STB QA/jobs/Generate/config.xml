@@ -9,22 +9,37 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers>
-    <hudson.triggers.TimerTrigger>
-      <spec>H/60 * * * *</spec>
-    </hudson.triggers.TimerTrigger>
-  </triggers>
+  <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
       <scriptSource class="hudson.plugins.groovy.StringScriptSource">
-        <command>/*GENERATE FIRST*/
+        <command>import java.text.SimpleDateFormat
+
+public class NotProcessedException extends Exception{
+  
+  public NotProcessedException(String message){
+    super(message)
+  }
+  
+}
+
+if(new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/folders.txt&quot;).getText().length() &gt; 0){
+  
+  throw new NotProcessedException(&quot;Directory file hasn&apos;t processed yet...aborting&quot;)
+  
+  println &quot;Directory file hasn&apos;t processed yet...aborting&quot;
+  
+  return
+}
+
+/*GENERATE FIRST*/
 
 //File file = new File(&quot;SVOD-STB.txt&quot;)
-//def newline = System.getProperty(&quot;line.separator&quot;)
+def newline = System.getProperty(&quot;line.separator&quot;)
 
 //generate and convert value to string
-def svodGenref =  String.valueOf(((int)((Math.random()*719359467)+1))).substring(0, 7)
+def svodGenref =  String.valueOf(((int)((Math.random()*999959497)+1))).substring(0, 7)
 
 //uiD setup
 def svoduid_full = String.valueOf(((int)((Math.random()*99999)+1)))
@@ -32,6 +47,7 @@ def svoduid_4digits = svoduid_full.substring(0, 3)
 def svoduid_2digits = svoduid_full.substring(2, 4)
 def svoduid = svoduid_4digits + &quot;SVOD&quot; + svoduid_2digits
 //uiD setup
+
 
 def svodSeriesId = String.valueOf(((int)((Math.random()*99999)+1))).substring(0, 4)
 
@@ -89,6 +105,7 @@ println &quot;Done dropping image: &quot; + destFileImg + seriesIdImg + extImg
 println &quot;&quot;
 println &quot;==================================================================&quot;
 println &quot;&quot;
+
 /*DROP ASSET==============================================================*/
 //specify source &amp; dest
 def soureFileAss = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/automation_ssm.mxf&quot;
@@ -115,7 +132,45 @@ println &quot;&quot;
 println &quot;==================================================================&quot;
 println &quot;&quot;
 
-</command>
+log(svodGenref, svoduid, svodSeriesId)
+
+
+def log(genref, uid, seriesId){
+  
+  
+def date = new Date()
+sdf = new SimpleDateFormat(&quot;MM/dd/yyyy HH:mm:ss&quot;)
+
+File file = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/log.txt&quot;)
+
+def testType = &quot;SVOD STB&quot;
+ 
+file &lt;&lt; &quot;\n&quot; + sdf.format(date) + &quot;: &quot; + genref + &quot;|Type: &quot; + testType + &quot;|UID: &quot;   + uid + &quot;|SeariesID: &quot; + seriesId + &quot;\n&quot;
+
+  
+}
+
+logFolders(svodGenref)
+
+def logFolders(genref){
+  
+File file = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/folders.txt&quot;)
+  
+  file.text = &apos;&apos;
+ 
+file &lt;&lt; genref + &quot;_&quot; + &quot;11103\n&quot; +  genref + &quot;_&quot; + &quot;11203\n&quot; +  genref + &quot;_&quot; + &quot;11303\n&quot; +  genref + &quot;_&quot; + &quot;11403&quot;
+  
+}
+
+//Update file for approval
+def jsonContents = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/jobs/Generate/SVOD-STB-APPROVE-ALL.json&quot;).getText()
+def jsonFilePath = &quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/jobs/Generate/SVOD-STB-APPROVE-ALL1.json&quot;
+
+jsonContents = jsonContents.replace(&quot;{genref}&quot;,svodGenref);
+
+File jsonFile = new File(jsonFilePath)
+
+jsonFile.text = jsonContents</command>
       </scriptSource>
       <groovyName>Groovy1.5.4</groovyName>
       <parameters></parameters>

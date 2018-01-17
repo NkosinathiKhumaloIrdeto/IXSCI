@@ -1,0 +1,34 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson2088218539903268428.groovy"
+
+Done updating xml: genref:11542385 udi:999Y6TVOD trailerUid:115B4TVOD
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/11542385.png
+
+==================================================================
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/11542385.jpg
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/11542385_115B4TVOD.mxf
+Done dropping video: //172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/11542385_115B4TVOD.mxf
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/11542385_999Y6TVOD.mxf
+Done dropping video: //172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/11542385_999Y6TVOD.mxf
+
+==================================================================
+
+Triggering a new build of [8mha:////4Nmi8w+fnZYyJXKishKU0ZaCLpvdmb/1CRPL912cR7U+AAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYZ/az8JP2QMH8XMCM4NS8lIL+4JB4sAgD43k8r0QAAAA==[0mTVOD » SendPost_TVOD
+Finished: SUCCESS

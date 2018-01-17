@@ -1,0 +1,35 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson770908754247407781.groovy"
+
+Done updating xml: genref:21474836 udi:371R1TVOD trailerUid:214X7TVOD
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/21474836.png
+
+==================================================================
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/21474836.jpg
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/21474836_214X7TVOD.mxf
+Done dropping video: //172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/21474836_214X7TVOD.mxf
+
+==================================================================
+
+==================================================================
+
+//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/21474836_371R1TVOD.mxf
+Caught: java.io.IOException: The network path was not found
+java.io.IOException: The network path was not found
+	at hudson770908754247407781.dropVideo(hudson770908754247407781.groovy:94)
+	at hudson770908754247407781$dropVideo$0.callCurrent(Unknown Source)
+	at hudson770908754247407781.run(hudson770908754247407781.groovy:56)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

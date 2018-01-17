@@ -1,0 +1,18 @@
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)
+[Generate (REF and Sources)] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\TVOD\Generate (REF and Sources)\hudson3960290801894825100.groovy"
+
+Done updating xml: genref:21474836 udi:437C3TVOD trailerUid:214Q7TVOD
+
+==================================================================
+
+Terminate batch job (Y/N)? 
+^CTerminate batch job (Y/N)? 
+Build step 'Execute Groovy script' marked build as failure

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -8,47 +9,118 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <triggers/>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H/30 * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
       <scriptSource class="hudson.plugins.groovy.StringScriptSource">
         <command>//generate and convert value to string
-def tvodGenref =  generateUniqueNumber(log)
+def genref = String.valueOf(((int)((Math.random()*999999999)+1))).substring(0, 8) 
 
 //alphabet array
-def alpha = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, &quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, &quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;] as String[]
+def alpha = [&quot;a&quot;, 
+&quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, 
+&quot;g&quot;, &quot;h&quot;, &quot;i&quot;, &quot;j&quot;, &quot;k&quot;, &quot;l&quot;, &quot;m&quot;, 
+&quot;n&quot;, &quot;o&quot;, &quot;p&quot;, &quot;q&quot;, &quot;r&quot;, &quot;s&quot;, &quot;t&quot;, 
+&quot;u&quot;, &quot;v&quot;, &quot;w&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;] as String[]
 
 //generate tvodID
-def tvodUid =  tvodGenref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + tvodGenref.substring(3, 4) + &quot;TVOD&quot;
+def uid =  genref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + genref.substring(3, 4) + &quot;TVOD&quot;
 
 //generate genrefid for trailerid
 
-tvodGenref = generateUniqueNumber(log)
+genref = String.valueOf(((int)((Math.random()*9999998999)+1))).substring(0, 8) 
 
 //set trailer id
-def trailerUid = tvodGenref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + tvodGenref.substring(3, 4) + &quot;TVOD&quot;
+def trailerUid = genref.substring(0, 3) + alpha[((int)((Math.random()*26)))].toUpperCase()  + genref.substring(3, 4) + &quot;TVOD&quot;
 
-//function to generate unique number
-def generateUniqueNumber(logfile){
+/*GENERATE FIRST*/
+
+//read file:
+def xmlContents = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/TVOD/collection.json&quot;).getText()
+
+//where to put new file
+def networkPath =  &quot;C:/Program Files (x86)/Jenkins/jobs/TVOD/collection1.json&quot;
+
+//put values in array
+def vals = [genref,uid,trailerUid]
+//log.info vals
+
+def keys = [&quot;{#Project#TVODgenRef}&quot;,&quot;{#Project#TVODuid}&quot;,&quot;{#Project#TVODtrailerUid}&quot;]
+//log.info keys
+
+def key = keys[0]
+
+for(def i = 0; i &lt; 3; ++i){
+	//log.info xmlContents//keys[i] + &quot; &quot; + vals[i]
 	
-	def contLoop = true
+	xmlContents = xmlContents.replace(keys[i],vals[i]);	
 	
-	def newid = &quot;&quot;//String.valueOf(((double)((Math.random()*999999999)+1))).substring(0, 8) 
+}
 
-	while(contLoop){
+File file = new File(networkPath)
 
-		newid = String.valueOf(((int)((Math.random()*99999999)+1))).substring(0, 8) 
+file.text = xmlContents
 
-		if(!checkID(newid, logfile)){
+println &quot;&quot;
+println &quot;Done updating xml: genref:&quot; + genref + &quot; udi:&quot; + uid + &quot; trailerUid:&quot; + trailerUid
+println &quot;&quot;
 
-			contLoop = false;
-			
-		}
-			
-	}
-	
-	return newid
+dropImage(genref, uid, &quot;.png&quot;)
+dropImage(genref, uid, &quot;.jpg&quot;)
+dropVideo(genref, trailerUid, &quot;automation_ssm.mxf&quot;)
+dropVideo(genref, uid, &quot;automation_sm.mxf&quot;)
+
+
+def dropImage(def genref, def uid, def ext){
+  
+println &quot;==================================================================&quot;
+println &quot;&quot;
+/*DROP IMAGE==============================================================*/
+def soureFileImg = &quot;//172.16.103.220/MediaManager/Automation image ingest/automation&quot; + ext
+def destFileImg = &quot;//172.16.103.220/MediaManager/Images/&quot;
+
+def srcStreamImg = new File(soureFileImg).newDataInputStream()
+def dstStreamImg = new File(destFileImg + genref + ext).newDataOutputStream()
+dstStreamImg &lt;&lt; srcStreamImg
+srcStreamImg.close()
+dstStreamImg.close()
+
+println &quot;Done dropping image: &quot; + destFileImg + genref + ext
+
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+  
+}
+
+def dropVideo(def genref, def uid, def name){
+  
+println &quot;==================================================================&quot;
+println &quot;&quot;
+/*DROP VIDEO==============================================================*/
+def soureFile = &quot;//172.16.103.220/Encoder_Area/Ardome/Automation files/&quot; + name
+def destFile = &quot;//172.16.103.220/Encoder_Area/Ardome/AUTOMATION_SYSTEM/&quot;
+  
+def vidName = destFile + genref + &quot;_&quot; + uid + &quot;.mxf&quot;
+println vidName
+  
+def srcStream = new File(soureFile).newDataInputStream()
+def dstStream = new File(vidName).newDataOutputStream()
+dstStream &lt;&lt; srcStream
+srcStream.close()
+dstStream.close()
+
+println &quot;Done dropping video: &quot; + vidName
+
+println &quot;&quot;
+println &quot;==================================================================&quot;
+println &quot;&quot;
+  
 }</command>
       </scriptSource>
       <groovyName>Groovy1.5.4</groovyName>
@@ -59,6 +131,16 @@ def generateUniqueNumber(logfile){
       <classPath></classPath>
     </hudson.plugins.groovy.Groovy>
   </builders>
-  <publishers/>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>SendPost_TVOD</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
   <buildWrappers/>
 </project>

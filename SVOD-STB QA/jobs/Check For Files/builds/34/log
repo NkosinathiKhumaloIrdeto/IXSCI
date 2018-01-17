@@ -1,0 +1,28 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson3525124928723265409.groovy"
+
+Folder(s) scanned: 
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/4099424_11103
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11103\Protected\IS20_4099424_898SVOD86_SD_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11103\Transcoded\IS20_4099424_898SVOD86_SD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/4099424_11203
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11203\Protected\IS20_4099424_898SVOD86_HD_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11203\Protected\IS20_4099424_898SVOD86_HD_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11203\Transcoded\IS20_4099424_898SVOD86_HD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/4099424_11303
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11303\Protected\IS20_4099424_898SVOD86_Explora_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11303\Protected\IS20_4099424_898SVOD86_Explora_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11303\Transcoded\IS20_4099424_898SVOD86_Explora_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/4099424_11403
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11403\Protected\IS20_4099424_898SVOD86_Nano_m1.mpg
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11403\Protected\IS20_4099424_898SVOD86_Nano_m1.mpg.idx
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\4099424_11403\Transcoded\IS20_4099424_898SVOD86_Nano_m1.mpg
+
+SD - YES
+HD - YES
+EXP - YES
+NAN - YES
+
+Triggering a new build of [8mha:////4DTAiyNU+BcCnKuyHs6SDNb+Fsx2jfp6xA5OH42agze8AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHsIh7al5qUWJJqj4A8aD1btUAAAA=[0mSVOD-STB QA » Generate
+Finished: SUCCESS

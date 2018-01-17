@@ -1,0 +1,7 @@
+Time to wake up and build!!!
+Time to wake up and build!!!
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson3782668884259027515.groovy"
+===================================
+...It works
+Finished: SUCCESS

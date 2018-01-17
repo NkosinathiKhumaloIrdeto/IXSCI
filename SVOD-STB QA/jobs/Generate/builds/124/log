@@ -1,0 +1,24 @@
+Started by user [8mha:////4Gwv4j2dudTtq/1kb2FkemIy4fmHKvL3NLoP1nFBh8z7AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyhEgYJ/dLi1CL9vOz84sy8xJKMTL3sjNLcxJx8AAYU757NAAAA[0mNkosinathi Khumalo
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson2759023156766132044.groovy"
+
+Done updating xml: genref:1461904 udi:912SVOD24 seriesid:2568
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/2568.png
+
+==================================================================
+
+
+Done dropping asset: 1461904_912SVOD24.mxf
+
+==================================================================
+
+Caught: groovy.lang.MissingPropertyException: No such property: newline for class: hudson2759023156766132044
+groovy.lang.MissingPropertyException: No such property: newline for class: hudson2759023156766132044
+	at hudson2759023156766132044.logFolders(hudson2759023156766132044.groovy:126)
+	at hudson2759023156766132044$logFolders$0.callCurrent(Unknown Source)
+	at hudson2759023156766132044.run(hudson2759023156766132044.groovy:119)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

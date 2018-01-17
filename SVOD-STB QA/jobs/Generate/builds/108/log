@@ -1,0 +1,19 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate
+[Generate] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Generate\hudson4539432838255187246.groovy"
+
+Done updating xml: genref:5899242 udi:631SVOD13 seriesid:8594
+
+==================================================================
+
+Done dropping image: //172.16.103.220/MediaManager/Images/8594.png
+
+==================================================================
+
+
+Done dropping asset: 5899242_631SVOD13.mxf
+
+==================================================================
+
+Triggering a new build of [8mha:////4K/ZmhecUpeJ7cKQfETRTydkab3ELY9lNu9YYmi9QaQsAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP3gMH8X3eAQJ1Ujg0BHiEhqXkpAfnGJPgDrXs1Z1QAAAA==[0mSVOD-STB QA » SendPost
+Finished: SUCCESS

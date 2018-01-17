@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>1</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>H/20 * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.groovy.Groovy plugin="groovy@2.0">
+      <scriptSource class="hudson.plugins.groovy.StringScriptSource">
+        <command>//check if file exists
+
+import groovy.io.FileType
+
+public class NoProcessedException extends Exception{
+  
+  public NoProcessedException(String message){
+    super(message)
+  }
+  
+}
+
+Map&lt;String, Integer&gt; aMap = new HashMap&lt;String, Integer&gt;();
+
+def newline = System.getProperty(&quot;line.separator&quot;)
+def logPaths = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/folders.txt&quot;)
+def checkText = new File(&quot;C:/Program Files (x86)/Jenkins/jobs/SVOD-STB QA/folders.txt&quot;).getText()
+
+if (!(checkText.length() &gt; 0)) {
+  
+  println &quot;Directory file not populated yet... aborting&quot;
+  
+ // hudson.model.Result.SUCCESS;
+  return
+}
+
+def a1 = 0;
+
+def a2 = 0;
+
+def a3 = 0;
+
+def a4 = 0;
+
+println &quot;&quot; 
+println &quot;Folder(s) scanned: &quot; 
+
+logPaths.withReader { reader -&gt;
+  while ((line = reader.readLine())!=null) {
+           
+ 	foldername = &quot;//172.16.103.220/MediaManager/irdeto.com/ContentGroup/&quot; + line
+    
+	def list = []
+
+	def dir = new File(foldername)
+    
+    println &quot; &quot; + foldername 
+    
+    if (dir.exists()){
+    
+		dir.eachFileRecurse (FileType.FILES) { file -&gt;
+       	
+          println &quot;   &quot; +file.path
+          
+          if (file.path.indexOf(&quot;11103&quot;) &gt; 0){a1++}  //sd
+          if (file.path.indexOf(&quot;11203&quot;) &gt; 0){a2++}  //hd
+          if (file.path.indexOf(&quot;11303&quot;) &gt; 0){a3++}  //explora
+          if (file.path.indexOf(&quot;11403&quot;) &gt; 0){a4++}  //nano
+          
+  			list &lt;&lt; file
+		}
+      
+      
+    }
+     
+         }
+      }
+
+def fileExists(def path){
+  
+ return new File(path).exists()
+  
+}
+println &quot;&quot;
+if(a1 &gt; 1){println &quot;SD - YES&quot;} else {println &quot;SD - X&quot;}
+if(a2 &gt; 2){println &quot;HD - YES&quot;} else {println &quot;HD - X&quot;}
+if(a3 &gt; 2){println &quot;EXP - YES&quot;} else {println &quot;EXP - X&quot;}
+if(a4 &gt; 2){println &quot;NAN - YES&quot;} else {println &quot;NAN - X&quot;}
+println &quot;&quot;
+if((a1 &gt;= 2) &amp;&amp; (a2 &gt;= 2) &amp;&amp; (a3 &gt;= 2) &amp;&amp; (a4 &gt;= 2)) {
+  
+  logPaths.text = &apos;&apos;
+  
+ // hudson.model.Result.SUCCESS;
+} else {
+
+  throw new NoProcessedException(&quot;Not all files were processed...&quot;);
+  //hudson.model.Result.FAILURE;
+}
+</command>
+      </scriptSource>
+      <groovyName>Groovy1.5.4</groovyName>
+      <parameters></parameters>
+      <scriptParameters></scriptParameters>
+      <properties></properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
+  </builders>
+  <publishers>
+    <hudson.tasks.BuildTrigger>
+      <childProjects>ApproveAll</childProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </hudson.tasks.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,23 @@
+Started by timer
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files
+[Check For Files] $ "C:\Program Files (x86)\Jenkins\tools\hudson.plugins.groovy.GroovyInstallation\Groovy1.5.4\bin\groovy.bat" "C:\Program Files (x86)\Jenkins\workspace\SVOD-STB QA\Check For Files\hudson7927248963570731122.groovy"
+Folder(s) scanned: 
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/2040547_11103
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\2040547_11103\Transcoded\IS20_2040547_951SVOD15_SD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/2040547_11203
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\2040547_11203\Transcoded\IS20_2040547_951SVOD15_HD_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/2040547_11303
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\2040547_11303\Transcoded\IS20_2040547_951SVOD15_Explora_m1.mpg
+ //172.16.103.220/MediaManager/irdeto.com/ContentGroup/2040547_11403
+   \\172.16.103.220\MediaManager\irdeto.com\ContentGroup\2040547_11403\Transcoded\IS20_2040547_951SVOD15_Nano_m1.mpg
+
+SD X
+HD X
+EXP X
+NAN X
+
+Caught: groovy.lang.MissingPropertyException: No such property: hudson for class: hudson7927248963570731122
+groovy.lang.MissingPropertyException: No such property: hudson for class: hudson7927248963570731122
+	at hudson7927248963570731122.run(hudson7927248963570731122.groovy:76)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

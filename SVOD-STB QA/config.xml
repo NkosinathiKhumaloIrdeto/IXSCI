@@ -17,6 +17,41 @@
         <filterQueue>false</filterQueue>
         <properties class="hudson.model.View$PropertyList"/>
       </hudson.model.AllView>
+      <hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.9.11">
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>test</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>ApproveAll</string>
+          <string>Check For Files</string>
+          <string>Generate</string>
+          <string>SendPost</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <jenkins.branch.DescriptionColumn plugin="branch-api@2.0.17"/>
+        </columns>
+        <recurse>true</recurse>
+        <useCssStyle>false</useCssStyle>
+        <includeStdJobList>false</includeStdJobList>
+        <hideJenkinsPanels>false</hideJenkinsPanels>
+        <leftPortletWidth>50%</leftPortletWidth>
+        <rightPortletWidth>50%</rightPortletWidth>
+        <leftPortlets/>
+        <rightPortlets/>
+        <topPortlets/>
+        <bottomPortlets/>
+      </hudson.plugins.view.dashboard.Dashboard>
     </views>
     <tabBar class="hudson.views.DefaultViewsTabBar"/>
   </folderViews>
